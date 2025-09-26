@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Parent Component">
+        <div class="slds-m-around_medium">
+             <lightning-input 
+                label="Parent Value"
+                value={parentValue}
+                onchange={handleParentChange}
+                required data-requiredfield>
+            </lightning-input>
+            <!-- Pass grandparentValue to child -->
+            <c-child-component 
+                grandparent-value={grandparentValue} onchildvalidation={handleChildEvent}>
+            </c-child-component>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Child Component (Picklist)">
+        <div class="slds-m-around_medium">
+            <lightning-combobox
+                name="childPicklist"
+                label="Child Picklist"
+                value={selectedValue}
+                placeholder="Select an option"
+                options={options}
+                onchange={handleChange} required data-requiredfield>
+            </lightning-combobox>
+
+            <p>Selected Child Value: {selectedValue}</p>
+        </div>
+    </lightning-card>
+</template>
